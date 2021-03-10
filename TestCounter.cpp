@@ -8,7 +8,7 @@ struct ReporterCounter: public ConsoleReporter {
     ReporterCounter(const ContextOptions& input_options)
             : ConsoleReporter(input_options) {}
 
-    void test_run_end(const TestRunStats& run_stats) override {
+    void test_run_end(const TestRunStats & run_stats) override {
         if (run_stats.numAsserts >= MIN_TESTS) {
             std::cout << 100 << std::endl;
         } else {
