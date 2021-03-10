@@ -33,7 +33,7 @@ TEST_CASE("Bad snowman code") {
     CHECK_THROWS(snowman(444444444));
     CHECK_THROWS(snowman(0));
     CHECK_THROWS(snowman(-1));
-    CHECK_THROWS(snowman(111192311));
+    CHECK_THROWS(snowman(11192311));
 
 
 
